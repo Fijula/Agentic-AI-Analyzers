@@ -1,0 +1,83 @@
+🚀 Starting Slack Mock Service...
+📋 Configuration:
+  Port: 4003
+  Host: 0.0.0.0
+  Auth Required: true
+  Default Channel: qa-reports
+💻 Running locally
+🔧 Activating virtual environment...
+📥 Installing dependencies...
+Requirement already satisfied: fastapi==0.115.6 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (0.115.6)
+Requirement already satisfied: uvicorn==0.32.1 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (0.32.1)
+Requirement already satisfied: sqlalchemy==2.0.36 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from -r requirements.txt (line 3)) (2.0.36)
+Requirement already satisfied: jinja2==3.1.4 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from -r requirements.txt (line 4)) (3.1.4)
+Requirement already satisfied: python-multipart==0.0.17 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from -r requirements.txt (line 5)) (0.0.17)
+Requirement already satisfied: pydantic==2.10.3 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from -r requirements.txt (line 6)) (2.10.3)
+Requirement already satisfied: python-dotenv==1.0.1 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from -r requirements.txt (line 7)) (1.0.1)
+Requirement already satisfied: starlette<0.42.0,>=0.40.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from fastapi==0.115.6->-r requirements.txt (line 1)) (0.41.3)
+Requirement already satisfied: typing-extensions>=4.8.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from fastapi==0.115.6->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from pydantic==2.10.3->-r requirements.txt (line 6)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.27.1 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from pydantic==2.10.3->-r requirements.txt (line 6)) (2.27.1)
+Requirement already satisfied: click>=7.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn==0.32.1->uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (8.3.1)
+Requirement already satisfied: h11>=0.8 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn==0.32.1->uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from jinja2==3.1.4->-r requirements.txt (line 4)) (3.0.3)
+Requirement already satisfied: httptools>=0.6.3 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (0.7.1)
+Requirement already satisfied: pyyaml>=5.1 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (6.0.3)
+Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (0.22.1)
+Requirement already satisfied: watchfiles>=0.13 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (1.1.1)
+Requirement already satisfied: websockets>=10.4 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2)) (15.0.1)
+Requirement already satisfied: anyio<5,>=3.4.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from starlette<0.42.0,>=0.40.0->fastapi==0.115.6->-r requirements.txt (line 1)) (4.12.0)
+Requirement already satisfied: idna>=2.8 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/slack-mock/venv/lib/python3.11/site-packages (from anyio<5,>=3.4.0->starlette<0.42.0,>=0.40.0->fastapi==0.115.6->-r requirements.txt (line 1)) (3.11)
+🎯 Starting FastAPI server...
+📡 API will be available at: http://0.0.0.0:4003
+🌐 Web UI will be available at: http://0.0.0.0:4003/ui
+📚 API docs will be available at: http://0.0.0.0:4003/docs
+🔧 Initializing database...
+✅ Database initialized successfully
+🔍 Verifying application...
+✅ Application verified successfully
+🎯 Starting FastAPI server...
+INFO:     Started server process [55997]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:4003 (Press CTRL+C to quit)
+2025-12-08 13:01:13,367 - app_simple - INFO - GET /health - 127.0.0.1
+2025-12-08 13:01:13,367 - app_simple - INFO - Request completed in 0.000s
+INFO:     127.0.0.1:63642 - "GET /health HTTP/1.1" 200 OK
+2025-12-08 13:01:28,903 - app_simple - INFO - GET /health - 127.0.0.1
+2025-12-08 13:01:28,903 - app_simple - INFO - Request completed in 0.000s
+INFO:     127.0.0.1:63702 - "GET /health HTTP/1.1" 200 OK
+2025-12-08 13:01:35,601 - app_simple - INFO - GET /ui/ - 127.0.0.1
+2025-12-08 13:01:35,619 - app_simple - INFO - Request completed in 0.017s
+INFO:     127.0.0.1:63837 - "GET /ui/ HTTP/1.1" 200 OK
+2025-12-08 13:01:35,635 - app_simple - INFO - GET /favicon.ico - 127.0.0.1
+2025-12-08 13:01:35,636 - app_simple - INFO - Request completed in 0.001s
+INFO:     127.0.0.1:63837 - "GET /favicon.ico HTTP/1.1" 204 No Content
+2025-12-08 13:01:36,553 - app_simple - INFO - GET /ui/ - 127.0.0.1
+2025-12-08 13:01:36,557 - app_simple - INFO - Request completed in 0.004s
+INFO:     127.0.0.1:63837 - "GET /ui/ HTTP/1.1" 200 OK
+2025-12-08 13:01:36,579 - app_simple - INFO - GET /favicon.ico - 127.0.0.1
+2025-12-08 13:01:36,579 - app_simple - INFO - Request completed in 0.000s
+INFO:     127.0.0.1:63837 - "GET /favicon.ico HTTP/1.1" 204 No Content
+2025-12-08 13:09:07,453 - app_simple - INFO - GET /ui/ - 127.0.0.1
+2025-12-08 13:09:07,461 - app_simple - INFO - Request completed in 0.008s
+INFO:     127.0.0.1:65526 - "GET /ui/ HTTP/1.1" 200 OK
+2025-12-08 13:09:07,478 - app_simple - INFO - GET /favicon.ico - 127.0.0.1
+2025-12-08 13:09:07,478 - app_simple - INFO - Request completed in 0.001s
+INFO:     127.0.0.1:65526 - "GET /favicon.ico HTTP/1.1" 204 No Content
+2025-12-08 13:09:08,328 - app_simple - INFO - GET /ui/ - 127.0.0.1
+2025-12-08 13:09:08,332 - app_simple - INFO - Request completed in 0.003s
+INFO:     127.0.0.1:65526 - "GET /ui/ HTTP/1.1" 200 OK
+2025-12-08 13:09:08,352 - app_simple - INFO - GET /favicon.ico - 127.0.0.1
+2025-12-08 13:09:08,353 - app_simple - INFO - Request completed in 0.001s
+INFO:     127.0.0.1:65526 - "GET /favicon.ico HTTP/1.1" 204 No Content
+2025-12-08 13:09:08,984 - app_simple - INFO - GET /ui/ - 127.0.0.1
+2025-12-08 13:09:08,987 - app_simple - INFO - Request completed in 0.003s
+INFO:     127.0.0.1:65526 - "GET /ui/ HTTP/1.1" 200 OK
+2025-12-08 13:09:09,006 - app_simple - INFO - GET /favicon.ico - 127.0.0.1
+2025-12-08 13:09:09,007 - app_simple - INFO - Request completed in 0.001s
+INFO:     127.0.0.1:65526 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55997]

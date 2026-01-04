@@ -1,0 +1,56 @@
+🚀 Starting TestRail Mock Service...
+🐍 Detected Python 3.11
+🔧 Activating virtual environment...
+📥 Installing dependencies...
+   Installing FastAPI and dependencies (this may take a moment)...
+Requirement already satisfied: fastapi==0.115.4 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (0.115.4)
+Requirement already satisfied: uvicorn==0.32.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (0.32.0)
+Requirement already satisfied: sqlalchemy==2.0.36 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 3)) (2.0.36)
+Requirement already satisfied: jinja2==3.1.4 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 4)) (3.1.4)
+Requirement already satisfied: python-multipart==0.0.12 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 5)) (0.0.12)
+Requirement already satisfied: pydantic==2.10.2 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 6)) (2.10.2)
+Requirement already satisfied: pytest==8.3.3 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 7)) (8.3.3)
+Requirement already satisfied: pytest-asyncio==0.24.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 8)) (0.24.0)
+Requirement already satisfied: httpx==0.27.2 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from -r requirements.txt (line 9)) (0.27.2)
+Requirement already satisfied: starlette<0.42.0,>=0.40.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from fastapi==0.115.4->-r requirements.txt (line 1)) (0.41.3)
+Requirement already satisfied: typing-extensions>=4.8.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from fastapi==0.115.4->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from pydantic==2.10.2->-r requirements.txt (line 6)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.27.1 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from pydantic==2.10.2->-r requirements.txt (line 6)) (2.27.1)
+Requirement already satisfied: click>=7.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn==0.32.0->uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (8.3.1)
+Requirement already satisfied: h11>=0.8 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn==0.32.0->uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from jinja2==3.1.4->-r requirements.txt (line 4)) (3.0.3)
+Requirement already satisfied: iniconfig in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from pytest==8.3.3->-r requirements.txt (line 7)) (2.3.0)
+Requirement already satisfied: packaging in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from pytest==8.3.3->-r requirements.txt (line 7)) (25.0)
+Requirement already satisfied: pluggy<2,>=1.5 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from pytest==8.3.3->-r requirements.txt (line 7)) (1.6.0)
+Requirement already satisfied: anyio in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from httpx==0.27.2->-r requirements.txt (line 9)) (4.12.0)
+Requirement already satisfied: certifi in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from httpx==0.27.2->-r requirements.txt (line 9)) (2025.11.12)
+Requirement already satisfied: httpcore==1.* in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from httpx==0.27.2->-r requirements.txt (line 9)) (1.0.9)
+Requirement already satisfied: idna in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from httpx==0.27.2->-r requirements.txt (line 9)) (3.11)
+Requirement already satisfied: sniffio in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from httpx==0.27.2->-r requirements.txt (line 9)) (1.3.1)
+Requirement already satisfied: httptools>=0.5.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (0.7.1)
+Requirement already satisfied: python-dotenv>=0.13 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (1.2.1)
+Requirement already satisfied: pyyaml>=5.1 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (6.0.3)
+Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (0.22.1)
+Requirement already satisfied: watchfiles>=0.13 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (1.1.1)
+Requirement already satisfied: websockets>=10.4 in /Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/testrail-mock/.venv/lib/python3.11/site-packages (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2)) (15.0.1)
+✅ Starting TestRail Mock on http://localhost:4002
+   - UI Dashboard: http://localhost:4002/ui
+   - Test Cases: http://localhost:4002/ui/cases
+   - API Docs: http://localhost:4002/docs
+   - Health: http://localhost:4002/health
+
+🧪 Sample test data loaded:
+   - 5 test sections (Authentication, User Management, API Tests, UI Tests, Integration)
+   - 18 sample test cases with steps and results
+   - 1 test run with execution history
+
+Press Ctrl+C to stop the server
+
+INFO:     Will watch for changes in these directories: ['/Users/fijula/LogAnalyzer_Complete/mock-services/testrail-mock']
+ERROR:    [Errno 48] Address already in use
+                                                                                                                                                                                                                                                                                                                                                                                          INFO:     127.0.0.1:56394 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [81948]
+INFO:     Stopping reloader process [81946]

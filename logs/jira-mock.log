@@ -1,0 +1,27 @@
+🚀 Starting Jira Mock Service...
+🔧 Activating virtual environment...
+📥 Installing dependencies...
+✅ Starting Jira Mock on http://localhost:4001
+   - UI: http://localhost:4001/ui
+   - API Docs: http://localhost:4001/docs
+   - Health: http://localhost:4001/health
+
+Press Ctrl+C to stop the server
+
+INFO:     Will watch for changes in these directories: ['/Users/fijula/LogAnalyzer_Complete/mock-services/jira-mock']
+INFO:     Uvicorn running on http://0.0.0.0:4001 (Press CTRL+C to quit)
+INFO:     Started reloader process [9370] using StatReload
+INFO:     Started server process [9372]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56618 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56639 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56639 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:56639 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56639 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:56639 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56639 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:56648 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56650 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56640 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56640 - "GET /favicon.ico HTTP/1.1" 204 No Content

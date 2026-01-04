@@ -1,0 +1,104 @@
+🚀 Starting Jira Mock Service...
+🔧 Activating virtual environment...
+📥 Installing dependencies...
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x106dda3c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/pip/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x106dce210>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/pip/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x106dce350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/pip/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after conneINFO:     127.0.0.1:62133 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62135 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62135 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62339 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62365 - "GET /rest/api/3/issue/QA-1 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1139, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 106, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 452, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "/Users/fijula/Agentic_AI_LogAnalyzer/Jira_Testrail_Slack_Demo_Service/mock-services/jira-mock/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 278, in serialize_response
+    raise ResponseValidationError(
+    ...<3 lines>...
+    )
+fastapi.exceptions.ResponseValidationError: 3 validation errors:
+  {'type': 'missing', 'loc': ('response', 'fields', 'reporter', 'accountId'), 'msg': 'Field required', 'input': {'displayName': 'jane.smith'}}
+  {'type': 'dict_type', 'loc': ('response', 'fields', 'components', 0), 'msg': 'Input should be a valid dictionary', 'input': 'frontend'}
+  {'type': 'dict_type', 'loc': ('response', 'fields', 'components', 1), 'msg': 'Input should be a valid dictionary', 'input': 'authentication'}
+
+  File "/Users/fijula/LogAnalyzer_Complete/mock-services/jira-mock/app.py", line 433, in get_issue
+    GET /rest/api/3/issue/{issue_key}
+INFO:     127.0.0.1:62367 - "DELETE /rest/api/3/issue/QA-5 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62393 - "GET /rest/api/3/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62393 - "GET /rest/api/3/search?startAt=0&maxResults=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62393 - "GET /rest/api/3/search?jql=project%20=%20QA%20AND%20issuetype%20=%20Bug HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62395 - "POST /admin/reset HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62397 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:62397 - "GET /rest/api/3/issue/ HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62397 - "GET /rest/api/3/issue HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:62397 - "GET /rest/api/3/search?maxResults=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62397 - "DELETE /rest/api/3/issue/ HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:62397 - "DELETE /rest/api/3/issue HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:62458 - "GET /rest/api/3/search HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62491 - "GET /rest/api/3/issue/INVALID-999 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63283 - "GET /rest/api/3/issue/INVALID-999 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63283 - "POST /rest/api/3/issue HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:64950 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64952 - "POST /rest/api/3/issue HTTP/1.1" 201 Created
+INFO:     127.0.0.1:65233 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65233 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:50830 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50830 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:50830 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50830 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:50830 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50830 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:54046 - "POST /admin/reset HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54078 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54078 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [80622]
+INFO:     Stopping reloader process [80620]
